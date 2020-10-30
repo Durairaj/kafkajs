@@ -24,7 +24,7 @@ export class AppController implements OnModuleInit {
   @Get()
   getHello(): string {
     // fire event to kafka
-    // this.client.emit<string>('entity-created', 'some entity ' + new Date());
+     this.client.emit<string>('entity-created', 'some entity ' + new Date());
     return this.appService.getHello();
   }
 

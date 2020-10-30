@@ -5,7 +5,7 @@ export const microserviceConfig: KafkaOptions = {
 
     options: {
         client: {
-            brokers: ["127.0.0.1:9092"],
+            brokers: ["dev-cp-kafka-headless:9092"],
         },
         consumer: {
             groupId: '1',
